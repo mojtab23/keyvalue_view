@@ -1,21 +1,214 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body ng-app="BlankApp" ng-cloak layout="column">
 <!--
   Your HTML content here
 -->
-<md-toolbar layout-padding>
+<md-toolbar class="md-medium-tall md-toolbar-tools-bottom" md-scroll-shrink md-shrink-speed-factor="0.25">
+    <span flex></span>
+    <!--<div class="md-toolbar-tools">-->
+    <!--<h2>KeyValue</h2>-->
+    <!--<layout>-->
+    <!--<md-button flex>B1</md-button>-->
+    <!--<md-button flex>B2</md-button>-->
+    <!--<md-button flex>B3</md-button>-->
+    <!--</layout>-->
+    <!--</div>-->
     <div class="md-toolbar-tools">
+        <md-button class="md-icon-button">
+            <md-icon md-svg-src="img/ic_menu_black_24px.svg"></md-icon>
+        </md-button>
         <h2>KeyValue</h2>
+        <span flex></span>
+        <md-button>An Action</md-button>
     </div>
 </md-toolbar>
-
+<!--<md-sidenav md-is-open="true" class="md-sidenav-left">-->
+<!--<md-toolbar layout-padding class="md-medium-tall">-->
+<!--<h2 class="md-toolbar-tools">All Actions</h2>-->
+<!--</md-toolbar>-->
+<!--</md-sidenav>-->
+<md-content layout="row">
+    <md-card>
+        <md-card-header>
+            <md-card-avatar>
+                <img class="md-user-avatar" height="200" width="200" src="img/V.svg">
+            </md-card-avatar>
+            <md-card-header-text>
+                <span class="md-title">Title</span>
+                <span class="md-subhead">Sub header</span>
+            </md-card-header-text>
+        </md-card-header>
+        <img ng-src="img/V.svg" class="md-card-image" alt="image caption">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Card headline</span>
+                <span class="md-subhead">Card subheader</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="start center">
+            <md-button>Action 1</md-button>
+            <md-button>Action 2</md-button>
+            <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="icon">
+                    <md-icon md-svg-icon="icon"></md-icon>
+                </md-button>
+            </md-card-icon-actions>
+        </md-card-actions>
+        <md-card-content>
+            <p>
+                Card content
+            </p>
+        </md-card-content>
+    </md-card>
+    <md-card>
+        <img src="img/key.svg" height="200" width="200" class="md-card-image" alt="image caption">
+        <md-card-content>
+            <h2>Card headline</h2>
+            <p>Card content</p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button>Action 1</md-button>
+            <md-button>Action 2</md-button>
+        </md-card-actions>
+    </md-card>
+    <!--<div layout-padding>-->
+    <!--From 1991 to 1999, HTML developed from version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016. From 1991 to 1999, HTML developed from-->
+    <!--version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016.-->
+    <!--From 1991 to 1999, HTML developed from version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016.-->
+    <!--From 1991 to 1999, HTML developed from version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016.-->
+    <!--From 1991 to 1999, HTML developed from version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016.-->
+    <!--From 1991 to 1999, HTML developed from version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016.-->
+    <!--From 1991 to 1999, HTML developed from version 1 to version 4.-->
+    <!--In year 2000, the World Wide Web Consortium (W3C) recommended XHTML 1.0. The XHTML syntax was strict, and the-->
+    <!--developers were forced to write valid and "well-formed" code.-->
+    <!--In 2004, W3C's decided to close down the development of HTML, in favor of XHTML.-->
+    <!--In 2004, WHATWG (Web Hypertext Application Technology Working Group) was formed. The WHATWG wanted to develop-->
+    <!--HTML,-->
+    <!--consistent with how the web was used, while being backward compatible with older versions of HTML.-->
+    <!--In 2004 - 2006, the WHATWG gained support by the major browser vendors.-->
+    <!--In 2006, W3C announced that they would support WHATWG.-->
+    <!--In 2008, the first HTML5 public draft was released.-->
+    <!--In 2012, WHATWG and W3C decided on a separation:-->
+    <!--WHATWG wanted to develop HTML as a "Living Standard". A living standard is always updated and improved. New-->
+    <!--features-->
+    <!--can be added, but old functionality cannot be removed.-->
+    <!--The WHATWG HTML5 Living Standard was published in 2012, and is continuously updated.-->
+    <!--W3C wanted to develop a definitive HTML5 and XHTML standard.-->
+    <!--The W3C HTML5 recommendation was released 28 October 2014.-->
+    <!--W3C also published an HTML 5.1 Candidate Recommendation on 21 June 2016.-->
+    <!--</div>-->
+</md-content>
 <!--
   Your HTML content here
 -->
@@ -31,8 +224,8 @@
 
 <!-- Your application bootstrap  -->
 <!--<script type="text/javascript">-->
-    <!--var myModule = angular.module('BlankApp', ['ngMaterial']);-->
-    <!--myModule.controller()-->
+<!--var myModule = angular.module('BlankApp', ['ngMaterial']);-->
+<!--myModule.controller()-->
 <!--</script>-->
 <script src="js/keyvalue-app.js"></script>
 
